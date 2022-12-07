@@ -1,0 +1,48 @@
+
+<nav class="navbar navbar-collapse-lg navbar-dark bg-dark"> 
+    <a class="navbar-brand navbar-right" href="/">Student Performance Monitoring System</a>  
+    <nav class="navbar justify-content-end">
+        <ul class="nav ">
+        <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/" style="color: #FFEBCD;">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#" style="color: #FFEBCD;">Question Bank</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#" style="color: #FFEBCD;">Course Outline</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/login" style="color: #FFEBCD;">Login</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/register" style="color: #FFEBCD;">Register</a>
+        </li>
+        </ul>
+    </nav>
+</nav>
+    {{!-- Body of each page will go here --}}
+ <div class="container mt-4">
+        <div class="card" style="width: 25rem; position: relative; left: 18rem; top: 10rem;">            
+            <div class="card-header">Login Form</div>    
+            <div class="card-body">
+                <form action="/server/routes/auth.js" method="POST">
+                    <div class="mb-3">
+                        <label for="name-reg" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name-reg" name="name">                        
+                    </div>
+                    <div class="mb-3">
+                        <label for="email-reg" class="form-label">Email</label>
+                        <input type="text" class="form-control" id="email-reg" name="email">                        
+                    </div>
+                    <div class="mb-3">
+                        <label for="password-reg" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="password-reg" name="password">
+                    </div>
+
+                    <button type="submit" class="btn btn-primary" style="background: green;">Login</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
